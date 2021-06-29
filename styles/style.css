@@ -192,14 +192,23 @@ body {
 .mainbody{
     padding-top: 90px;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 
 
 
+.resumemain img{
+    width: 400px;
+    max-width: 100%;
+    margin-top: 20px;
+}
 
-
-
+.divclass{
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+}
 
 
 
@@ -208,15 +217,7 @@ body {
     display: flex;
     flex-wrap: wrap;
    }
-
-  .newsmain{
-padding-top: 72px;
-padding-left: 7vw;
-  }
-  
-  #newsheading{
-      font-size: 15vw;
-  }
+ 
  .resume {
     background-color: rgba(0, 0, 0, 0.719);
     flex-direction: column;
@@ -241,13 +242,7 @@ padding-left: 7vw;
 }
 
 
-.article{
-    width: 50%;
-    margin: 15px;
-}
-.article img{
-    width: 80%;
-}
+
 
    .resume a {
     font-size: 23px;
@@ -306,8 +301,20 @@ padding-left: 7vw;
 
 
 
+.vacancymain > div{
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
 form{
-    width: 60%;
+    width: 700px;
+    max-width: 100%;
     background-color: #002638;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -320,7 +327,26 @@ form{
         justify-content: flex-start;
         height: 100%;
     
+        
 }
+
+.resume-details{
+    background-color: rgb(161, 154, 250);
+    display: flexbox;
+    justify-content: flex-start;
+    height: 100%;
+}
+.resume-details > div{
+    margin-bottom: 5px;
+    
+    border-bottom: 2px black solid;
+}
+.resume-details > div> div{
+    width: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+    }
 .labelclass{display: inline-block;
     width: 30%;
 }
