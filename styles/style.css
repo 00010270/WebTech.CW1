@@ -197,11 +197,46 @@ body {
 
 
 
+.headerphoto{
+    padding-top: 85px;
+    background-image: url("../images/photo1.jpg");
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-height: 500px;
+    color: hsl(0, 100%, 5%);
+    padding-left: 5vh;
+}
+.home-button{
+    background-color: rgb(92, 2, 2);
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.headerphoto h3{
+
+    margin:  0 0 15px 0;
+    width: 50%;
+    font-size: 3vw;
+}
+.resume-content{
+    display: flex; 
+    
+    
+    flex-wrap: wrap;
+}
 
 .resumemain img{
-    width: 400px;
+    height: 100%;
+    width: 500px;
     max-width: 100%;
-    margin-top: 20px;
+    margin: 20px;
+    border: 3px black solid;
 }
 
 .divclass{
@@ -335,6 +370,7 @@ form{
     display: flexbox;
     justify-content: flex-start;
     height: 100%;
+    margin: 20px;
 }
 .resume-details > div{
     margin-bottom: 5px;
@@ -357,6 +393,12 @@ form{
 }
 .account-details input{
     width: 65%;
+}
+
+.textarea{
+    width: 400px;
+    max-width: 100%;
+    height: 100px;
 }
 
 
