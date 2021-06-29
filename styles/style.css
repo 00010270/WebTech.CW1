@@ -1,0 +1,479 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    line-height: 1.6;
+    color: #110000;
+    background-color: #aeffff;
+    margin: 0px;
+}
+.container {
+    max-width: 1200px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+.navigation-toggle{
+    font-size: larger;
+    text-decoration: bold;
+    background-color: transparent;
+    color: white;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+#navigation {
+    position: fixed;
+    height: 85px;
+    background-color: #002638;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+#navigation > nav > a{
+    font-size: 40px;
+}
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.navigation-item {
+    margin: 0.4em;
+    width: 100%;
+}
+
+.home-link,
+.navigation-link {
+    color: hsl(0, 0%, 85%);
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out,
+                color 0.5s ease-in-out;
+}
+
+.home-link:focus,
+.home-link:hover {
+    color: white;
+}
+
+.navigation-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+}
+
+.navigation-link:focus,
+.navigation-link:hover {
+    color: white;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.navigation-logo {
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+}
+
+
+
+
+.navigation-toggle:hover {
+    color: yellow;
+}
+
+#navigation.opened .navigation-toggle .icon-bar:first-child,
+#navigation.opened .navigation-toggle .icon-bar:last-child {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+}
+
+#navigation.opened .navigation-toggle .icon-bar:first-child {
+    transform: rotate(45deg);
+}
+
+#navigation.opened .navigation-toggle .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#navigation.opened .navigation-toggle .icon-bar:last-child {
+    transform: rotate(-45deg);
+}
+
+.navigation-menu {
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    transition: opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+}
+
+#navigation.opened .navigation-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation-links {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #002638;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#navigation.opened .navigation-links {
+    padding: 1em;
+    max-height: none;
+}
+
+@media screen and (min-width: 700px) {
+    .navigation-toggle {
+        display: none;
+    }
+    
+    #navigation .navigation-menu,
+    #navigation.opened .navigation-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    #navigation .navigation-links,
+    #navigation.opened .navigation-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navigation .navigation-link:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.headings{
+    font-size: 50px;
+    color: rgb(0, 36, 41);
+}
+.mainbody{
+    padding-top: 90px;
+    margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+  .newsmain{
+padding-top: 72px;
+padding-left: 7vw;
+  }
+  
+  #newsheading{
+      font-size: 15vw;
+  }
+ .resume {
+    background-color: rgba(0, 0, 0, 0.719);
+    flex-direction: column;
+    justify-content: space-between;
+    width: 265px;
+    height: 335px;
+    overflow: hidden;
+    margin: 20px 9px 0 9px;
+    box-shadow: black 10px;
+    color: white;
+  }
+  
+   .resume img {
+    align-self: center;
+    height: 180px;
+    width: 100%;
+  }
+  
+.heading{
+    font-size: 45px;
+    color: #002638;
+}
+
+
+.article{
+    width: 50%;
+    margin: 15px;
+}
+.article img{
+    width: 80%;
+}
+
+   .resume a {
+    font-size: 23px;
+    margin: 12px 14px 0 14px;
+    color: white;
+    text-decoration: none;
+  }
+   .resume div p {
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  #joblist{
+    background-color: white;
+}
+
+#joblist li{
+    display: inline-block;
+    padding: 10px 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-bottom: 2px solid black;
+}
+#joblist .panel{
+    display: none;
+    border: 1px solid #ddd;
+
+}
+
+#joblist .panel.active{
+    display: block;
+}
+
+.jobsmain{
+    padding-top: 70px;
+    padding-left: 18%;
+    padding-right: 18%;
+    color: black;
+
+}
+
+
+
+form{
+    width: 60%;
+    background-color: #002638;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px;
+    color: white;
+    box-shadow: white 5px 5px 5px ;
+}
+.account-details{
+        display: flexbox;
+        justify-content: flex-start;
+        height: 100%;
+    
+}
+.labelclass{display: inline-block;
+    width: 30%;
+}
+
+.account-details > div{
+    
+    margin: 20px;
+}
+.account-details input{
+    width: 65%;
+}
+
+
+
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+    
+    @media (max-height:800px){
+        footer { position: static; }
+    }
+    
+    
+    .footer-main{
+        background-color: #002638;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+        padding: 50px 50px 60px 50px;
+        margin-top: 80px;
+    }
+    
+    .footer-main .footer-left,
+    .footer-main .footer-center,
+    .footer-main .footer-right{
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    /* Footer left */
+    
+    .footer-main .footer-left{
+        width: 30%;
+        text-align: center;
+    }
+    
+    .footer-main h3{
+        color:  #ffffff;
+        font: normal 36px;
+        margin: 0;
+    }
+    
+    /* Footer links */
+    
+    .footer-main .footer-links{
+        color:  #ffffff;
+        margin: 20px 0 12px;
+    }
+    
+    .footer-main .footer-links a{
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+    }
+    
+    .footer-main .footer-company-name{
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    /* Footer Center */
+    
+    .footer-main .footer-center{
+        width: 25%;
+    }
+    
+    
+    
+    
+   
+ 
+    
+    /* Footer Right */
+    
+    .footer-main .footer-right{
+        width: 30%;
+        text-align: center;
+    }
+    
+    .footer-main .footer-company-about{
+        line-height: 20px;
+        color:  #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .footer-main .footer-company-about span{
+        display: block;
+        color:  #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .footer-main .footer-icons{
+        margin-top: 25px;
+    }
+    
+    .footer-main .footer-icons a{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #33383b;
+        border-radius: 2px;
+    
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+    
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+    .footer-icons a{
+        width: 15px;
+        height: 15px;
+    }
+    .footer-icons img{
+        width: 100%;
+    }
+    /* the code for Responsive Footer */
+    
+    
+    @media (max-width: 880px) {
+    
+        .footer-main .footer-left,
+        .footer-main .footer-center,
+        .footer-main .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        .footer-main .footer-center i{
+            margin-left: 0;
+        }
+    
+    }
