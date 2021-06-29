@@ -246,7 +246,21 @@ body {
 }
 
 
+.index-main{
+    background-color: white;
+    width: 800px;
+    max-width: 100%;
+    padding: 20px;
+}
 
+.index-main > a{
+    background-color: #002638;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 20px;
+}
 
 .row {
     display: flex;
